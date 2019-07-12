@@ -1,4 +1,12 @@
+/*
+ * @Author: 穆鑫怡 
+ * @Date: 2019-07-12 14:44:45 
+ * @Last Modified by:   穆鑫怡 
+ * @Last Modified time: 2019-07-12 14:44:45 
+ */
+
 /* @flow */
+// flow表示该文件需要被flow静态检测类型
 
 import config from '../config'
 import { initUse } from './use'

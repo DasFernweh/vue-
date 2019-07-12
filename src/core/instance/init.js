@@ -11,7 +11,7 @@ import { initProvide, initInjections } from './inject'
 import { extend, mergeOptions, formatComponentName } from '../util/index'
 
 let uid = 0
-
+// 添加一个可选属性的方式是：{属性名称?: 类型}。可选属性值可以是void或省略，但是不能是null
 export function initMixin (Vue: Class<Component>) {
   Vue.prototype._init = function (options?: Object) {
     const vm: Component = this

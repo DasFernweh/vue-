@@ -1,3 +1,9 @@
+/*
+ * @Author: 穆鑫怡 
+ * @Date: 2019-07-12 15:13:13 
+ * @Last Modified by: 穆鑫怡
+ * @Last Modified time: 2019-07-12 15:13:34
+ */
 /* @flow */
 
 import config from 'core/config'
@@ -22,6 +28,7 @@ Vue.prototype.$mount = function (
   el = el && query(el)
 
   /* istanbul ignore if */
+  // Vue不能挂载在body、html这样的根节点上
   if (el === document.body || el === document.documentElement) {
     process.env.NODE_ENV !== 'production' && warn(
       `Do not mount Vue to <html> or <body> - mount to normal elements instead.`
